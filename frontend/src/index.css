@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.navbar {
+  background-color: #1e293b;
+  border-bottom: 1px solid #334155;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn-primary { background-color: #3b82f6; color: white; }
+.btn-primary:hover { background-color: #2563eb; }
+.btn-secondary { background-color: #334155; color: #f8fafc; }
+.btn-secondary:hover { background-color: #475569; }
+.btn-danger { background-color: #ef4444; color: white; }
+
+.card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-URGENT { background: #fee2e2; color: #991b1b; }
+.badge-HIGH { background: #ffedd5; color: #9a3412; }
+.badge-MEDIUM { background: #e0f2fe; color: #075985; }
+.badge-LOW { background: #f1f5f9; color: #475569; }
+
+.badge-OPEN { background: #dbeafe; color: #1e40af; }
+.badge-IN_PROGRESS { background: #fef3c7; color: #92400e; }
+.badge-RESOLVED { background: #dcfce7; color: #166534; }
+.badge-CLOSED { background: #f3f4f6; color: #374151; }
+
+.sla-ON_TRACK { background: #14532d; color: #86efac; }
+.sla-AT_RISK { background: #713f12; color: #fde047; }
+.sla-BREACHED { background: #7f1d1d; color: #fca5a5; }
+
+.grid-cols-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #3b82f6;
+}
