@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": true,
+    "types": ["@types/bun"]
+  },
+  "include": ["src/**/*", "prisma/**/*", "tests/**/*"],
+  "exclude": ["node_modules", "dist", "frontend"]
+}
